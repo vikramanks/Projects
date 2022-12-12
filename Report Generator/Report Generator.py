@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[2]:
-
-
-# Version 1 with cred file updation
 import psycopg2
 import csv
 import sys
@@ -70,7 +64,7 @@ else:
 EMAIL_ADDRESS  = config['Email']['Emailid']
 EMAIL_PASSWORD = config['Email']['Password']
 
-contact = ['vikramandon5401@gmail.com','subbushaolin1306@gmail.com']
+contact = ['Please enter the send email id here']
 
 msg = EmailMessage()
 msg['Subject'] = 'Weekly Report'
@@ -92,7 +86,6 @@ with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
     smtp.send_message(msg)
 
 
-# In[ ]:
 
 
 
